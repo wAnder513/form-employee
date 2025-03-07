@@ -1,5 +1,19 @@
-# Vue 3 + TypeScript + Vite
+ТЕСТОВОЕ ЗАДАНИЕ
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Создайте приложение с двумя страницами:
+- Страница с формой ввода данных и кнопкой сохранения введенных данных
+- Страница с отображением результата ввода
+Форма должна состоять из следующих полей:
+- Город – выпадающий список
+- Цех – выпадающий список
+- Сотрудник – выпадающий список
+- Бригада – выпадающий список
+- Смена – выпадающий список
+Первые три поля зависят друг от друга (Город -> Цех -> Сотрудник), т.е. при выборе Города список Цехов изменяется и т.п.
+При сохранении данных должен осуществляться переход на страницу с отображением добавленных данных.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+ТРЕБОВАНИЯ К ЗАДАНИЮ:
+-	Проект необходимо реализовать на Vue.JS по методологии FSD (https://feature-sliced.design/ru/docs/get-started/overview)
+-	Добавить слои app, pages, entities (features и widgets - опционально)
+-	Внедрить роутинг (vue-router)
+-	Внедрить strore (pinia). На страницу отображения данные должны приходить из store.
